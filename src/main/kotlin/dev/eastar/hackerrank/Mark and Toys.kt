@@ -1,23 +1,6 @@
 package dev.eastar.hackerrank
 
-import java.io.*
-import java.math.*
-import java.security.*
-import java.text.*
 import java.util.*
-import java.util.concurrent.*
-import java.util.function.*
-import java.util.regex.*
-import java.util.stream.*
-import kotlin.collections.*
-import kotlin.comparisons.*
-import kotlin.io.*
-import kotlin.jvm.*
-import kotlin.jvm.functions.*
-import kotlin.jvm.internal.*
-import kotlin.ranges.*
-import kotlin.sequences.*
-import kotlin.text.*
 
 // Complete the maximumToys function below.
 fun maximumToys(prices: Array<Int>, k: Int): Int {
@@ -50,6 +33,7 @@ fun main(args: Array<String>) {
 
     println(result)
 }
+
 fun maximumToys2(prices: Array<Int>, k: Int): Int {
     var sumOfPrice = 0
     prices
@@ -64,13 +48,14 @@ fun maximumToys2(prices: Array<Int>, k: Int): Int {
         }
     return prices.size
 }
+
 fun maximumToys3(prices: Array<Int>, k: Int): Int {
     prices.sort()
     var sumOfPrice = 0
     var count = 0
     for (price in prices) {
         sumOfPrice += price
-        if(sumOfPrice <= k)
+        if (sumOfPrice <= k)
             count++
         else
             return count
