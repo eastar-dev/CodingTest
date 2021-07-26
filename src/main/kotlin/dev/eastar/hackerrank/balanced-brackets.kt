@@ -242,13 +242,13 @@ Char
 
 /**
 Task Description
-Given an input string (s) and a pattern (p), implement regular expression matching with support for'.'and '*'.
+Given an input.py string (s) and a pattern (p), implement regular expression matching with support for'.'and '*'.
 '.'Matches any single character.
 '*'Matches zero or more of the preceding element.
 
 
 
-The matching should cover the entire input string (not partial).
+The matching should cover the entire input.py string (not partial).
 
 
 
